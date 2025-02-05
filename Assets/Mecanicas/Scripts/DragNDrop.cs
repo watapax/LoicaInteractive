@@ -25,6 +25,7 @@ public class DragNDrop : MonoBehaviour
     private Quaternion targetRotation; 
     private Quaternion originalRotation; 
 
+
     private void Start()
     {
         mainCamera = Camera.main;
@@ -37,7 +38,9 @@ public class DragNDrop : MonoBehaviour
         previousTargetPosition = targetTransform.position;
 
         originalRotation = targetTransform.rotation;
-        targetRotation = originalRotation; 
+        targetRotation = originalRotation;
+        
+
     }
 
     private void OnMouseDown()
@@ -64,6 +67,9 @@ public class DragNDrop : MonoBehaviour
     private void OnMouseUp()
     {
         isDragging = false;
+
+        OnDropAction();
+
     }
 
     private void Update()
@@ -104,6 +110,14 @@ public class DragNDrop : MonoBehaviour
             targetRotation = originalRotation;
         }
         targetTransform.rotation = Quaternion.Slerp(targetTransform.rotation, targetRotation, rotationSmoothSpeed * Time.deltaTime);
+    }
+
+
+    public void OnDropAction()
+    {
+        // Disparar el evento
+        InteractionSystem.GatillarOnDrop();
+
     }
     
 
