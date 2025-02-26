@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3350a59b603772b41abda44b58efed14, type: 3}
+  m_Name: ABECEDARiO
+  m_EditorClassIdentifier: 
+  libreria:
+  - {fileID: 11400000, guid: de12c1d7997f3174291bf1a705bf4a78, type: 2}
+  - {fileID: 11400000, guid: 8450ed32b0b4438479e304ca49bc0432, type: 2}
+  - {fileID: 11400000, guid: 6edaa3df2ebf53b49a184772939c955e, type: 2}
+  - {fileID: 11400000, guid: 4e2e3a6a8f6cd5441be58a11949ef74a, type: 2}

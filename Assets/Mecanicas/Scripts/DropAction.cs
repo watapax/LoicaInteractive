@@ -1,7 +1,8 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class DropAction : MonoBehaviour
 {
+    public UnityEvent elEvento;
     public string id;
     public bool isOverlaping;
     bool isDraging;
@@ -31,7 +32,9 @@ public class DropAction : MonoBehaviour
     {
         if (isOverlaping)
         {
-            print(gameObject.name);
+           // implementar la wea del objeto print(gameObject.name);
+           // gatillar un evento publico
+           elEvento.Invoke();
         }
     }
 }
