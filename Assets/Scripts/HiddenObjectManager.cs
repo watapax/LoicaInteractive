@@ -37,6 +37,7 @@ public class HiddenObjectManager : MonoBehaviour
     public int cantidadDeObjetosMaximo;
     public int cantidadObjetosCorrectos;
 
+    public ExperienceManager experienceManager;
     public Contador contador;
     public PanelRespuesta panelRespuesta;
     public GameObject hiddenObjectPrefab;
@@ -47,6 +48,9 @@ public class HiddenObjectManager : MonoBehaviour
     
     public void IniciarJuego()
     {
+        //local experience se resetea
+        experienceManager.ResetLocalExp();
+
         // poblar el diccionario _abecedario
         for (int i = 0; i < abecedario.libreria.Length; i++)
         {
@@ -225,11 +229,14 @@ public class HiddenObjectManager : MonoBehaviour
     void RespuestaCorrecta(HiddenObject _hiddenObject)
     {
         print("respuesta correcta");
+        experienceManager.GainLocalExp(10);
+        contador.ToggleContador(false);
     }
 
     void RespuestaIncorrecta(HiddenObject _hiddenObject)
     {
         print("respuesta incorrecta");
+        contador.ToggleContador(false);
     }
 
 
@@ -269,11 +276,16 @@ public class HiddenObjectManager : MonoBehaviour
     }
 
 
-     void Update()
+    public void TerminoMiniJuego()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        // desactivar todos los botones
+
+        for(int i = 0; i < hiddenObjects.Length; i++)
         {
-            print(ghostTransforms[0].transform.position + "  " + ghostTransforms[1].transform.position);
+            hiddenObjects[i].puedeApretarse = false;
         }
     }
+
+
+    
 }

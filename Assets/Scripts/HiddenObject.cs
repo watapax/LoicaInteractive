@@ -10,7 +10,7 @@ public class HiddenObject : MonoBehaviour
 
     public Vector3 startPosition;
     public Vector3 ghostPosition;
-
+    public bool puedeApretarse = true;
     public void AlimentarDatosHiddenObject(ObjetoTemplate _obj)
     {
         id = _obj.id;
@@ -26,6 +26,8 @@ public class HiddenObject : MonoBehaviour
     }
     public void SeApreto()
     {
+        if (!puedeApretarse) return;
         HiddenObjectManager.instance.ChequearObjeto(this);
+        puedeApretarse = false;
     }
 }

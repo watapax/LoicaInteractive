@@ -5,6 +5,7 @@ using DG.Tweening;
 using System.Collections;
 public class PanelRespuesta : MonoBehaviour
 {
+    public Contador contador;
     public float tiempoDeEspera;
     public TextMeshProUGUI tmpro;
     public RectTransform rectTransform;
@@ -34,24 +35,29 @@ public class PanelRespuesta : MonoBehaviour
         
         if(_esCorrecto)
         {
-            _hiddenObject.GetComponent<Button>().enabled = false;
+            //_hiddenObject.GetComponent<Button>().enabled = false;
         }
 
         Vector3 targetScale = _esCorrecto ? Vector3.one * 1.5f : Vector3.one ;
         Vector3 targetPos = _esCorrecto ? _hiddenObject.ghostPosition : _hiddenObject.startPosition;
 
-        StartCoroutine(DevolverObjeto(_hiddenObject,targetPos, targetScale));
+        StartCoroutine(DevolverObjeto(_hiddenObject,targetPos, targetScale, _esCorrecto));
 
     }
 
-    IEnumerator DevolverObjeto(HiddenObject _hiddenObject, Vector3 _targetPos, Vector3 _targetScale)
+    IEnumerator DevolverObjeto(HiddenObject _hiddenObject, Vector3 _targetPos, Vector3 _targetScale, bool _esCorrecto)
     {
         yield return new WaitForSeconds(tiempoDeEspera);
 
-        FadeColor(bg, transparente, 0.5f);
+        StartCoroutine(FadeColor(bg, transparente, 0.5f));
         rectTransform.DOScale(Vector3.zero, lerpTimeVentana).SetEase(Ease.InOutSine);
         _hiddenObject.rectTransform.DOMove(_targetPos, lerpTimeEscala).SetEase(Ease.InOutSine);
         _hiddenObject.rectTransform.DOScale(_targetScale, lerpTimeEscala).SetEase(Ease.InOutSine);
+
+        yield return new WaitForSeconds(lerpTimeEscala);
+
+        _hiddenObject.puedeApretarse = !_esCorrecto;
+        contador.ToggleContador(true);
 
     }
 
