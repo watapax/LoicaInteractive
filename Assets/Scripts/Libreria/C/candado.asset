@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: candado
   letra: C
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 069f9f7b1cfaaa140b57a853c9a29b26, type: 3}
+  clipNo: {fileID: 8300000, guid: 032bda3523000384190d552119c8c475, type: 3}
   sprite: {fileID: -4402266666022288150, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

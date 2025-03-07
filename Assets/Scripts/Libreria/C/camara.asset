@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: camara
   letra: C
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: c9726f0daafba2849a3620be3956c232, type: 3}
+  clipNo: {fileID: 8300000, guid: 69d370233cd3c8c428aecaff7723a6bf, type: 3}
   sprite: {fileID: -7438180117525871483, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

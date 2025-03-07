@@ -95,6 +95,94 @@ ScriptedImporter:
     spritePosition: {x: 0, y: 0}
   multiSpriteImportData: []
   layeredSpriteImportData:
+  - name: abeja
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1990
+      y: 1472
+      width: 0
+      height: 0
+    spriteID: 1d85bdb9b18aee44caea3bb51da3c4b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1990, y: 1472}
+    spritePosition: {x: 0, y: 512}
+  - name: dedal
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1990
+      y: 1480
+      width: 0
+      height: 0
+    spriteID: 136ec92250af4dc4480b6d6187849652
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1990, y: 1480}
+    spritePosition: {x: 0, y: 512}
+  - name: ave
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1990
+      y: 1488
+      width: 0
+      height: 0
+    spriteID: 6415224d36209b84b82508fc5f0e4062
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1990, y: 1488}
+    spritePosition: {x: 0, y: 512}
+  - name: "ara\xF1a"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 1990
+      y: 1496
+      width: 0
+      height: 0
+    spriteID: eafff458936bb92408c4397b298bd73a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 1990, y: 1496}
+    spritePosition: {x: 0, y: 512}
   - name: bateria
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -710,6 +798,46 @@ ScriptedImporter:
   resliceFromLayer: 0
   pSDLayerImportSetting: []
   psdLayers:
+  - name: abeja
+    spriteName: abeja
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 1d85bdb9b18aee44caea3bb51da3c4b3
+    layerID: 35
+    mosaicPosition: {x: 1990, y: 1472}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: dedal
+    spriteName: dedal
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 136ec92250af4dc4480b6d6187849652
+    layerID: 34
+    mosaicPosition: {x: 1990, y: 1480}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: ave
+    spriteName: ave
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 6415224d36209b84b82508fc5f0e4062
+    layerID: 33
+    mosaicPosition: {x: 1990, y: 1488}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "ara\xF1a"
+    spriteName: "ara\xF1a"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: eafff458936bb92408c4397b298bd73a
+    layerID: 32
+    mosaicPosition: {x: 1990, y: 1496}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
   - name: bateria
     spriteName: bateria
     isGroup: 0

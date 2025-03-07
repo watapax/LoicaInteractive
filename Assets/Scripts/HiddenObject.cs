@@ -11,14 +11,18 @@ public class HiddenObject : MonoBehaviour
     public Vector3 startPosition;
     public Vector3 ghostPosition;
     public bool puedeApretarse = true;
-    public void AlimentarDatosHiddenObject(ObjetoTemplate _obj)
+    public float escalaObjeto;
+    public void AlimentarDatosHiddenObject(ObjetoTemplate _obj, float _escala)
     {
+        escalaObjeto = _escala;
         id = _obj.id;
         letra = _obj.letra;
         clipOk = _obj.clipOk;
         clipNo = _obj.clipNo;
         image.sprite = _obj.sprite;
         startPosition = transform.position;
+        image.SetNativeSize();
+       // rectTransform.localScale = Vector3.one * escalaObjeto;
     }
     private void Awake()
     {

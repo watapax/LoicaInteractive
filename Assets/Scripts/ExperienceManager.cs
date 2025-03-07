@@ -3,77 +3,132 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 using System.Collections;
+using System.Data;
+using UnityEngine.Events;
 public class ExperienceManager : MonoBehaviour
 {
-
+    public UnityEvent onSubirdeNivel;
+    public float velocidadAumentoBarra;
     public ExpData expData;
     float localExp;
     public Color transparente;
     public Color colorBgActivo;
-    public Image expBar;
+    public Image expBar, expBarLocal;
     public bool mostrar;
     public TextMeshProUGUI textLvl;
     public Image bg;
-    public float nextExp, currenExp, mod, fill, expAlFinalizarElJuego;
+    //public float nextExp, currenExp, mod, fill, expAlFinalizarElJuego;
     public float lerpTime;
     public RectTransform panelExp;
-
+    float fillAmountTarget;
+    public float porcentajeParaAyudar;
+    public GameObject nivelSuperadoObject;
     private void Start()
     {
         textLvl.text = "LVL " + expData.lvl.ToString();
-        nextExp = expData.expToNextLvl;
+        //nextExp = expData.expToNextLvl;
         panelExp.localScale = Vector3.zero;
         bg.color = transparente;
     }
     public void MostrarPanelExp()
     {
+
+
         StartCoroutine(FadeColor(bg, colorBgActivo, lerpTime));
         panelExp.DOScale(Vector3.one, lerpTime).SetEase(Ease.InOutSine);
-        currenExp = expData.currentExp;
-        expAlFinalizarElJuego = currenExp + localExp;
-        mostrar = true;
+        StartCoroutine(AnimarBarritaExp());
     }
 
 
-    float CalcularNextExp()
-    {
-        return expData.expToNextLvl *= 1.2f; // <== este valor hay que definirlo
-    }
+
     public void ResetLocalExp()
     {
         localExp = 0;
+        expBar.fillAmount = expData.prevFill;
     }
     public void GainLocalExp(int _exp)
     {
+
         localExp += _exp;
+        float exp = _exp / expData.expToNextLvl;  //(float)_exp / 100;
+        StartCoroutine(AnimarLocalExp(exp));
+    }
+
+    IEnumerator AnimarLocalExp(float _exp)
+    {
+        //Esperar un poquito
+        yield return new WaitForSeconds(0.7f); // <-- parametrizar este numero
+
+        float target = expBarLocal.fillAmount + _exp;
+
+        while(expBarLocal.fillAmount < target)
+        {
+            expBarLocal.fillAmount += Time.deltaTime * velocidadAumentoBarra;
+            yield return null;
+        }
+
+        expBarLocal.fillAmount = target;
     }
 
 
-    private void Update()
+
+
+
+
+    IEnumerator AnimarBarritaExp()
     {
-        if(mostrar)
+        yield return new WaitForSeconds(1);
+
+        bool subio = false;
+        while(expBarLocal.fillAmount > 0)
         {
-            expData.currentExp += Time.deltaTime;            
-            mod = expData.currentExp % nextExp;
-            fill = mod / nextExp;
-            expBar.fillAmount = fill;
+            expBarLocal.fillAmount -= Time.deltaTime * velocidadAumentoBarra;
+            expBar.fillAmount += Time.deltaTime * velocidadAumentoBarra; // aca debo multiplicar por el conversor de localexp a globalexp
 
-            if (expData.currentExp > nextExp)
+            if(expBar.fillAmount >= 1)
             {
-                expData.currentExp = 0;
-                nextExp = CalcularNextExp();
-                expData.lvl++;
-                textLvl.text = "LVL "+expData.lvl.ToString();
+                expBar.fillAmount = 0;
+                subio = true;
+                SubirDeNivel();
             }
+            yield return null;
 
-            if (currenExp >= expAlFinalizarElJuego)
-                mostrar = false;
 
         }
 
+        if (!subio && expBar.fillAmount > porcentajeParaAyudar)
+        {
+            ActivarMinijuegoDeAyuda();
+        }
 
+        if(subio)
+        {
+            yield return new WaitForSeconds(0.5f);
+            nivelSuperadoObject.SetActive(true);
+        }
+
+
+        expData.prevFill = expBar.fillAmount;
+
+        if(subio)
+        {
+            yield return new WaitForSeconds(3);
+            onSubirdeNivel.Invoke();
+        }
+
+        yield return null;
     }
 
+    void ActivarMinijuegoDeAyuda()
+    {
+        print("Se activa el minijuego de ayuda");
+    }
+
+    void SubirDeNivel()
+    {
+        print("animacion feedback de subir de nivel");
+        expData.lvl++;
+    }
 
     IEnumerator FadeColor(Image _image, Color _targetColor, float _lerpTime)
     {

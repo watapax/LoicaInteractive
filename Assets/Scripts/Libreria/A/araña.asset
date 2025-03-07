@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: "ara\xF1a"
   letra: A
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 79652a6ee36eef342870061f72b175ed, type: 3}
+  clipNo: {fileID: 8300000, guid: 3e14d050fd5fed348bc6b5a0d9364ed5, type: 3}
   sprite: {fileID: -1301304955, guid: 98275f1eddfe0e44b8ee79b21bf71aea, type: 3}

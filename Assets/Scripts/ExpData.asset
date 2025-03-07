@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99fae7333940b0447a5aece9bb034354, type: 3}
   m_Name: ExpData
   m_EditorClassIdentifier: 
-  lvl: 3
-  currentExp: 8.38472
-  expToNextLvl: 8.64
+  lvl: 2
+  currentExp: 0
+  expToNextLvl: 60
   totalExp: 0
+  prevFill: 0

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: bota
   letra: B
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 322ae7b33b68d764d99025109db096ff, type: 3}
+  clipNo: {fileID: 8300000, guid: 7bb0c490d10b5d24799e67fb01fa0146, type: 3}
   sprite: {fileID: 315277396170367332, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

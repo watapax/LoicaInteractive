@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: balon
   letra: B
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 892073e3f4efab346b2e58b32ee9e4a0, type: 3}
+  clipNo: {fileID: 8300000, guid: 9afda93cbb4d7234c91ca6af6d64efd9, type: 3}
   sprite: {fileID: -2618783805689353741, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: dado
   letra: D
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 39ce98ab71a670147ac0a076736ebef7, type: 3}
+  clipNo: {fileID: 8300000, guid: 68f1a062a47b3bc44b89aaaa827243c3, type: 3}
   sprite: {fileID: 404374067292392029, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

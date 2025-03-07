@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: dedal
   letra: D
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 80985ea99984c02468abe405494dfed0, type: 3}
+  clipNo: {fileID: 8300000, guid: 71dc7039c06365f41a854e3b9646e26e, type: 3}
   sprite: {fileID: 2006757066639200419, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: bicicleta
   letra: B
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 670371a20722dec43a938449a491d9a7, type: 3}
+  clipNo: {fileID: 8300000, guid: e1eecbe8ba2220141992e700085a7d18, type: 3}
   sprite: {fileID: 486553173314821512, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

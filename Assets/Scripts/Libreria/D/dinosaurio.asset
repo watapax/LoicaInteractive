@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: dinosaurio
   letra: D
-  clipOk: {fileID: 0}
-  clipNo: {fileID: 0}
+  clipOk: {fileID: 8300000, guid: 0927b1106137ee24a8d07415ffe39106, type: 3}
+  clipNo: {fileID: 8300000, guid: 7584b32daa1c9314c8f65160a21537e6, type: 3}
   sprite: {fileID: -6526955017350802509, guid: 8768f14953563744b8350284f5bdc92c, type: 3}

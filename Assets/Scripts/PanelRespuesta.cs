@@ -15,6 +15,7 @@ public class PanelRespuesta : MonoBehaviour
     public Color colorBgActivo;
 
     public float lerpTimeVentana, lerpTimeEscala;
+    AudioClip audioObjeto;
     private void Start()
     {
         rectTransform.localScale = Vector3.zero;
@@ -23,30 +24,51 @@ public class PanelRespuesta : MonoBehaviour
 
     public void ActivarVentana(HiddenObject _hiddenObject, bool _esCorrecto)
     {
-        
+        audioObjeto = _esCorrecto? _hiddenObject.clipOk: _hiddenObject.clipNo;
         bg.transform.SetAsLastSibling();
         rectTransform.SetAsLastSibling();
         _hiddenObject.transform.SetAsLastSibling();
-        tmpro.text = _hiddenObject.id;
+
+        string originalText = _hiddenObject.id;
+
+        char firstChar = originalText[0];
+
+        string restOfText = originalText.Substring(1);
+
+        originalText = $"<color=blue>{firstChar}</color>{restOfText}";
+
+        tmpro.text = originalText;
+
+
         rectTransform.DOScale(Vector3.one, lerpTimeVentana).SetEase(Ease.InOutSine);
         StartCoroutine( FadeColor(bg, colorBgActivo, lerpTimeVentana));
-        _hiddenObject.rectTransform.DOMove(rectTransformObject.position, lerpTimeEscala).SetEase(Ease.InOutSine);
-        _hiddenObject.rectTransform.DOScale(rectTransformObject.localScale, lerpTimeEscala).SetEase(Ease.InOutSine);
+        _hiddenObject.rectTransform.DOMove(rectTransformObject.transform.position, lerpTimeEscala).SetEase(Ease.InOutSine);
+        _hiddenObject.rectTransform.DOScale(rectTransformObject.localScale, lerpTimeEscala).SetEase(Ease.InOutSine).onComplete = ReproducirSonido;
         
         if(_esCorrecto)
         {
             //_hiddenObject.GetComponent<Button>().enabled = false;
         }
 
-        Vector3 targetScale = _esCorrecto ? Vector3.one * 1.5f : Vector3.one ;
+        Vector3 targetScale = _esCorrecto ? Vector3.one * 0.3f : Vector3.one * _hiddenObject.escalaObjeto ;
         Vector3 targetPos = _esCorrecto ? _hiddenObject.ghostPosition : _hiddenObject.startPosition;
 
         StartCoroutine(DevolverObjeto(_hiddenObject,targetPos, targetScale, _esCorrecto));
 
     }
 
+    
+
+    void ReproducirSonido()
+    {
+        print("reproducir sonido");
+        if(audioObjeto)
+            SoundManager.instance.ReproducirSfx(audioObjeto);
+    }
+
     IEnumerator DevolverObjeto(HiddenObject _hiddenObject, Vector3 _targetPos, Vector3 _targetScale, bool _esCorrecto)
     {
+
         yield return new WaitForSeconds(tiempoDeEspera);
 
         StartCoroutine(FadeColor(bg, transparente, 0.5f));

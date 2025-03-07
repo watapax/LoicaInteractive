@@ -31,7 +31,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.054313097
       - serializedVersion: 3
-        time: 0.45
+        time: 0.71666664
         value: -810
         inSlope: 0
         outSlope: 0
@@ -61,7 +61,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.05644302
       - serializedVersion: 3
-        time: 0.48333332
+        time: 0.78333336
         value: 64.51166
         inSlope: 0
         outSlope: 0
@@ -83,16 +83,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 132
-        inSlope: -1567.565
-        outSlope: -1567.565
+        value: 127
+        inSlope: -986.54285
+        outSlope: -986.54285
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.037273694
+        outWeight: 0.03207176
       - serializedVersion: 3
-        time: 0.41666666
-        value: -70.172485
+        time: 0.65
+        value: -27.245972
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -102,8 +102,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Barra
+    attribute: m_AnchoredPosition.y
+    path: barraFondo
     classID: 224
     script: {fileID: 0}
     flags: 0
@@ -134,8 +134,8 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 390240982
-      attribute: 1460864421
+      path: 25812016
+      attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -148,7 +148,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.48333332
+    m_StopTime: 0.78333336
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -178,7 +178,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.054313097
       - serializedVersion: 3
-        time: 0.45
+        time: 0.71666664
         value: -810
         inSlope: 0
         outSlope: 0
@@ -208,7 +208,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.05644302
       - serializedVersion: 3
-        time: 0.48333332
+        time: 0.78333336
         value: 64.51166
         inSlope: 0
         outSlope: 0
@@ -230,16 +230,16 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 132
-        inSlope: -1567.565
-        outSlope: -1567.565
+        value: 127
+        inSlope: -986.54285
+        outSlope: -986.54285
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.037273694
+        outWeight: 0.03207176
       - serializedVersion: 3
-        time: 0.41666666
-        value: -70.172485
+        time: 0.65
+        value: -27.245972
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -249,8 +249,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_AnchoredPosition.x
-    path: Barra
+    attribute: m_AnchoredPosition.y
+    path: barraFondo
     classID: 224
     script: {fileID: 0}
     flags: 0

@@ -5,11 +5,12 @@ using UnityEngine.UI;
 using System.Linq;
 using System;
 using TMPro;
+using DG.Tweening;
 
 
 public enum Alfabeto
 {
-    A, B, C, D, E, F, G, H, I,J,K ,L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z , TODOS     
+    A, B, C, D, TODOS     
 }
 
 [System.Serializable]
@@ -44,8 +45,10 @@ public class HiddenObjectManager : MonoBehaviour
     HiddenObject[] hiddenObjects;
     public Transform parentHiddenObjects;
     public GameObject ghostObjectPrefab;
-    public TextMeshProUGUI letraTextSeleccionada;
-    
+    //public TextMeshProUGUI letraTextSeleccionada;
+    public Transform contenedorLetras;
+    public GameObject prefabLetra;
+    public Animator animator;
     public void IniciarJuego()
     {
         //local experience se resetea
@@ -64,6 +67,7 @@ public class HiddenObjectManager : MonoBehaviour
         {
             GameObject _go = Instantiate(hiddenObjectPrefab, parentHiddenObjects);
             hiddenObjects[i] = _go.GetComponent<HiddenObject>();
+            hiddenObjects[i].rectTransform.localScale = Vector3.zero;
         }
 
         // shuflear slots
@@ -87,7 +91,7 @@ public class HiddenObjectManager : MonoBehaviour
             for (int j = 0; j < cantidadObjetosCorrectos / letrasCorrectas.Length; j++)
             {
                 // poblar los datos del objeto correcto con los datos del template
-                hiddenObjects[indexObjetosCorrectos].AlimentarDatosHiddenObject(_libreriaTemp.objetos[j]);
+                hiddenObjects[indexObjetosCorrectos].AlimentarDatosHiddenObject(_libreriaTemp.objetos[j], escalaObjetos);
                 indexObjetosCorrectos++;
             }
         }
@@ -99,7 +103,10 @@ public class HiddenObjectManager : MonoBehaviour
         {
             GameObject _go = Instantiate(ghostObjectPrefab, layoutGroupParent.transform);
             _go.GetComponent<Image>().sprite = hiddenObjects[i].image.sprite;
+            _go.GetComponent<Image>().SetNativeSize();
+            
             ghostTransforms[i] = _go.GetComponent<RectTransform>();
+            ghostTransforms[i].localScale = Vector3.one * 0.3f;
         }
 
         // asignar la posicion del ghost a los hiddenObjects correctos
@@ -124,16 +131,20 @@ public class HiddenObjectManager : MonoBehaviour
         // asignar los objetos a los hiddenObject incorrectos
         for(int i = indexObjetosCorrectos; i < cantidadDeObjetosMaximo; i++)
         {
-            hiddenObjects[i].AlimentarDatosHiddenObject(_objetosIncorrectos[i]);
+            hiddenObjects[i].AlimentarDatosHiddenObject(_objetosIncorrectos[i], escalaObjetos);
         }
 
 
         // mostrar la letra elegida en el panel
-        letraTextSeleccionada.text = "";
+        //letraTextSeleccionada.text = "";
         for (int i = 0; i < letrasCorrectas.Length; i++)
         {
-            letraTextSeleccionada.text += letrasCorrectas[i].ToString() + " ";
+            GameObject _prefabLetra = Instantiate(prefabLetra, contenedorLetras);
+            _prefabLetra.GetComponentInChildren<TextMeshProUGUI>().text = letrasCorrectas[i].ToString();
         }
+
+        //Animar objetos agrandandose
+        AgrandarLosObjetos();
 
     }
 
@@ -171,10 +182,22 @@ public class HiddenObjectManager : MonoBehaviour
             hiddenObjects[i].ghostPosition = ghostTransforms[i].position;
             //hiddenObjects[i].ghostPosition.y = adjustY;
         }
+
+
     }
-    public float adjustY;
 
 
+
+    void AgrandarLosObjetos()
+    {
+        for(int i = 0; i < hiddenObjects.Length; i++)
+        {
+            float duracion = UnityEngine.Random.Range(0.7f, 0.9f);
+            hiddenObjects[i].rectTransform.DOScale(Vector3.one * escalaObjetos, duracion).SetEase(Ease.OutExpo);
+        }
+
+    }
+    public float escalaObjetos;
 
     Vector3 GetWorldPositionOfUIElement(RectTransform element)
     {
@@ -283,7 +306,10 @@ public class HiddenObjectManager : MonoBehaviour
         for(int i = 0; i < hiddenObjects.Length; i++)
         {
             hiddenObjects[i].puedeApretarse = false;
+            hiddenObjects[i].rectTransform.DOScale(Vector3.zero, 0.8f).SetEase(Ease.InOutSine);
         }
+
+        animator.Play("terminoMinijuego");
     }
 
 

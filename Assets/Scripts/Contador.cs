@@ -36,6 +36,8 @@ public class Contador : MonoBehaviour
         float t = 0;
         float to = tiempo;
 
+        yield return new WaitForSeconds(0.7f);
+
         while(t < to)
         {
             t += contando? Time.deltaTime : 0;

@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/2 - Game.unity
     guid: 6c3c2ed8c4bdbd844a19e5abc9c1657e
+  - enabled: 1
+    path: Assets/Scenes/4 - ElCofre.unity
+    guid: 34bfcd2d2dc4cb94e9e11a87fcafd3a3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
