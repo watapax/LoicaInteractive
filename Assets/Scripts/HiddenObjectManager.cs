@@ -10,7 +10,7 @@ using DG.Tweening;
 
 public enum Alfabeto
 {
-    A, B, C, D, TODOS     
+    A, B, C, TODOS     
 }
 
 [System.Serializable]
@@ -298,7 +298,7 @@ public class HiddenObjectManager : MonoBehaviour
         }
     }
 
-
+    
     public void TerminoMiniJuego()
     {
         // desactivar todos los botones

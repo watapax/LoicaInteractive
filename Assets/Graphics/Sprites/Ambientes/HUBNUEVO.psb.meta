@@ -1,0 +1,908 @@
+fileFormatVersion: 2
+guid: 229f2bc92fce75a449d6f6f865fbc307
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 65fbaeb7f4b4144488e7b7399f9cad48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  multiSpriteImportData: []
+  layeredSpriteImportData:
+  - name: "JAB\xD3N"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7370
+      y: 3089
+      width: 386
+      height: 251
+    spriteID: 901518b4508f3954fb1790da920b0b8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7370, y: 3089}
+    spritePosition: {x: 2512, y: 62}
+  - name: BOLSILLO 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6986
+      y: 3089
+      width: 376
+      height: 266
+    spriteID: 881e636db4373a54ca716225b9135c31
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6986, y: 3089}
+    spritePosition: {x: 1503, y: 773}
+  - name: BOLSILLO 2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4710
+      y: 2672
+      width: 295
+      height: 213
+    spriteID: db3a988b6d55d7c4898f40fa95c6e9c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4710, y: 2672}
+    spritePosition: {x: 1963, y: 797}
+  - name: BOLSILLO 3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7370
+      y: 3348
+      width: 380
+      height: 231
+    spriteID: a6be3c9973c40db41be949ed4adb3cc3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7370, y: 3348}
+    spritePosition: {x: 2923, y: 817}
+  - name: BOLSILLO 4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4405
+      y: 2672
+      width: 297
+      height: 241
+    spriteID: 60217b68e2eced8408fad2ebe4e7972e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4405, y: 2672}
+    spritePosition: {x: 4008, y: 799}
+  - name: BOLSILLO 5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6456
+      y: 3406
+      width: 243
+      height: 189
+    spriteID: 0891d2b48dae4c34cb425f3622b53e36
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6456, y: 3406}
+    spritePosition: {x: 4479, y: 837}
+  - name: BOLSILLO 6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6986
+      y: 3363
+      width: 317
+      height: 219
+    spriteID: 4641343516e212d42919a4c4e12f1041
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6986, y: 3363}
+    spritePosition: {x: 4884, y: 791}
+  - name: "REFUGIO PUD\xDA"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6456
+      y: 3089
+      width: 522
+      height: 309
+    spriteID: 7682b3a0a7ebe784e83e916465548113
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6456, y: 3089}
+    spritePosition: {x: 2183, y: 292}
+  - name: puerta
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 5013
+      y: 2672
+      width: 187
+      height: 328
+    spriteID: 35cbc1dacc14535479d7cd6086ea9db4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5013, y: 2672}
+    spritePosition: {x: 3778, y: 243}
+  - name: MANCHAS DE PINTURA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4405
+      y: 2118
+      width: 3610
+      height: 546
+    spriteID: 24a8046275f7cf047889904f35b06098
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4405, y: 2118}
+    spritePosition: {x: 1294, y: 264}
+  - name: LATA ARRUGADA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6835
+      y: 3406
+      width: 115
+      height: 120
+    spriteID: 8d3cd56effe168543b3acb65f630dd83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6835, y: 3406}
+    spritePosition: {x: 3970, y: 81}
+  - name: PAPEL ARRUGADO
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7764
+      y: 3435
+      width: 151
+      height: 123
+    spriteID: 93a5e4a36e1ac29428a5861381b9c253
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7764, y: 3435}
+    spritePosition: {x: 3683, y: 104}
+  - name: BOTELLA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 8045
+      y: 3089
+      width: 119
+      height: 239
+    spriteID: 261409ab974d6a64ca45845b05b76d6d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 8045, y: 3089}
+    spritePosition: {x: 3479, y: 68}
+  - name: Marco ventana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 8045
+      y: 3336
+      width: 123
+      height: 185
+    spriteID: 2cbcec6ef74176247baf137d5fca2fc9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 8045, y: 3336}
+    spritePosition: {x: 3095, y: 521}
+  - name: AMPOLLETA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7923
+      y: 3435
+      width: 32
+      height: 89
+    spriteID: 392a50bcfa486be4cb69530ea286a2f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7923, y: 3435}
+    spritePosition: {x: 3130, y: 601}
+  - name: Fondo ventana
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6707
+      y: 3406
+      width: 120
+      height: 180
+    spriteID: c634be1a0dfd83f418c692cbec440ddd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6707, y: 3406}
+    spritePosition: {x: 3098, y: 525}
+  - name: "PUERTA PUD\xDA"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7764
+      y: 3089
+      width: 273
+      height: 338
+    spriteID: 10246af493e3adf448d5505510d97c23
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7764, y: 3089}
+    spritePosition: {x: 2854, y: 245}
+  - name: "CASA PUD\xDA"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 2118
+      width: 4393
+      height: 963
+    spriteID: d3f500a8507879c4082b39df4393275f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 2118}
+    spritePosition: {x: 854, y: 117}
+  - name: Suelo
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 8
+      y: 3089
+      width: 6436
+      height: 513
+    spriteID: a6244a2efb934ad47b101b4bbaf118ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 3089}
+    spritePosition: {x: 154, y: 0}
+  - name: arboles atras 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 4394
+      height: 1018
+    spriteID: b29f172def512ac44a4426a46434a405
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1092}
+    spritePosition: {x: 853, y: 62}
+  - name: Fondo Color
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 4444
+      height: 1080
+    spriteID: e1439224abe85cf4eb4cd1b5da4a8c49
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 774, y: 0}
+  spriteImportData: []
+  rigSpriteImportData: []
+  sharedRigSpriteImportData: []
+  mosaicSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    pivot: {x: 0, y: 0}
+    boneReadOnly: 0
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Android
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 0
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  padding: 4
+  spriteSizeExpand: 0
+  skeletonAssetReferenceID: 
+  pipeline: {instanceID: 0}
+  pipelineVersion: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  pSDLayerImportSetting: []
+  psdLayers:
+  - name: "JAB\xD3N"
+    spriteName: "JAB\xD3N"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 901518b4508f3954fb1790da920b0b8a
+    layerID: 112
+    mosaicPosition: {x: 7370, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Frente
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 36efc01febef10d46a24dbd72a040957
+    layerID: 66
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: BOLSILLOS ARBOLES
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 419f36381d74ce84ba8b70b45bd0845f
+    layerID: 96
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: BOLSILLO 1
+    spriteName: BOLSILLO 1
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 881e636db4373a54ca716225b9135c31
+    layerID: 88
+    mosaicPosition: {x: 6986, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOLSILLO 2
+    spriteName: BOLSILLO 2
+    isGroup: 0
+    parentIndex: 2
+    spriteID: db3a988b6d55d7c4898f40fa95c6e9c5
+    layerID: 93
+    mosaicPosition: {x: 4710, y: 2672}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOLSILLO 3
+    spriteName: BOLSILLO 3
+    isGroup: 0
+    parentIndex: 2
+    spriteID: a6be3c9973c40db41be949ed4adb3cc3
+    layerID: 94
+    mosaicPosition: {x: 7370, y: 3348}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOLSILLO 4
+    spriteName: BOLSILLO 4
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 60217b68e2eced8408fad2ebe4e7972e
+    layerID: 95
+    mosaicPosition: {x: 4405, y: 2672}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOLSILLO 5
+    spriteName: BOLSILLO 5
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 0891d2b48dae4c34cb425f3622b53e36
+    layerID: 110
+    mosaicPosition: {x: 6456, y: 3406}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOLSILLO 6
+    spriteName: BOLSILLO 6
+    isGroup: 0
+    parentIndex: 2
+    spriteID: 4641343516e212d42919a4c4e12f1041
+    layerID: 111
+    mosaicPosition: {x: 6986, y: 3363}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "REFUGIO PUD\xDA"
+    spriteName: "REFUGIO PUD\xDA"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 7682b3a0a7ebe784e83e916465548113
+    layerID: 84
+    mosaicPosition: {x: 6456, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: puerta
+    spriteName: puerta
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 35cbc1dacc14535479d7cd6086ea9db4
+    layerID: 53
+    mosaicPosition: {x: 5013, y: 2672}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BASURA
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 1a5f119c491b7694da6f483441fb8fff
+    layerID: 99
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: MANCHAS DE PINTURA
+    spriteName: MANCHAS DE PINTURA
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 24a8046275f7cf047889904f35b06098
+    layerID: 108
+    mosaicPosition: {x: 4405, y: 2118}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: LATA ARRUGADA
+    spriteName: LATA ARRUGADA
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 8d3cd56effe168543b3acb65f630dd83
+    layerID: 104
+    mosaicPosition: {x: 6835, y: 3406}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: PAPEL ARRUGADO
+    spriteName: PAPEL ARRUGADO
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 93a5e4a36e1ac29428a5861381b9c253
+    layerID: 101
+    mosaicPosition: {x: 7764, y: 3435}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: BOTELLA
+    spriteName: BOTELLA
+    isGroup: 0
+    parentIndex: 11
+    spriteID: 261409ab974d6a64ca45845b05b76d6d
+    layerID: 98
+    mosaicPosition: {x: 8045, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: VENTANA
+    spriteName: 
+    isGroup: 1
+    parentIndex: 1
+    spriteID: 64b8cb37b79bb80469075e0654a1bd86
+    layerID: 78
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Marco ventana
+    spriteName: Marco ventana
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 2cbcec6ef74176247baf137d5fca2fc9
+    layerID: 73
+    mosaicPosition: {x: 8045, y: 3336}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: AMPOLLETA
+    spriteName: AMPOLLETA
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 392a50bcfa486be4cb69530ea286a2f0
+    layerID: 77
+    mosaicPosition: {x: 7923, y: 3435}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Fondo ventana
+    spriteName: Fondo ventana
+    isGroup: 0
+    parentIndex: 16
+    spriteID: c634be1a0dfd83f418c692cbec440ddd
+    layerID: 76
+    mosaicPosition: {x: 6707, y: 3406}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "PUERTA PUD\xDA"
+    spriteName: "PUERTA PUD\xDA"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 10246af493e3adf448d5505510d97c23
+    layerID: 74
+    mosaicPosition: {x: 7764, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "CASA PUD\xDA"
+    spriteName: "CASA PUD\xDA"
+    isGroup: 0
+    parentIndex: 1
+    spriteID: d3f500a8507879c4082b39df4393275f
+    layerID: 89
+    mosaicPosition: {x: 4, y: 2118}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Suelo
+    spriteName: Suelo
+    isGroup: 0
+    parentIndex: 1
+    spriteID: a6244a2efb934ad47b101b4bbaf118ac
+    layerID: 3
+    mosaicPosition: {x: 4, y: 3089}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: arboles atras 1
+    spriteName: arboles atras 1
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b29f172def512ac44a4426a46434a405
+    layerID: 38
+    mosaicPosition: {x: 4, y: 1092}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Fondo Color
+    spriteName: Fondo Color
+    isGroup: 0
+    parentIndex: -1
+    spriteID: e1439224abe85cf4eb4cd1b5da4a8c49
+    layerID: 4
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  mosaicPSDLayers: []
+  rigPSDLayers: []
+  sharedRigPSDLayers: []
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638823226591351598
+  spriteSizeExpandChanged: 0
+  generateGOHierarchy: 1
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []

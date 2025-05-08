@@ -1,9 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class DragNDrop : MonoBehaviour
 {
-    
-    private bool isDragging = false;
+    public UnityEvent onMouseEnter, onMouseup;
+    public  bool isDragging = false;
     private Vector3 offset;
     private Camera mainCamera;
 
@@ -45,6 +45,11 @@ public class DragNDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
+        onMouseEnter.Invoke();
+        if(Parallax.instance != null)
+        {
+            Parallax.instance.enable = false;
+        }
         Vector3 mousePos = Input.mousePosition;
         mousePos.z = mainCamera.WorldToScreenPoint(transform.position).z;
         offset = transform.position - mainCamera.ScreenToWorldPoint(mousePos);
@@ -66,6 +71,11 @@ public class DragNDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
+        onMouseup.Invoke();
+        if (Parallax.instance != null)
+        {
+            Parallax.instance.enable = true;
+        }
         isDragging = false;
 
         OnDropAction();
@@ -94,7 +104,7 @@ public class DragNDrop : MonoBehaviour
 
     private void ApplyRotationBasedOnVelocity()
     {
-
+        if (!isDragging) return;
         if (isMoving)
         {
 

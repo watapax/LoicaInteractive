@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0d2a2a5fd8c9d54c908710ac0446b59, type: 3}
   m_Name: avion
   m_EditorClassIdentifier: 
-  id: avion
+  id: "avi\xF3n"
   letra: A
-  clipOk: {fileID: 8300000, guid: 0b4cd77a85c0d3c43af82c1e87c01426, type: 3}
-  clipNo: {fileID: 8300000, guid: 93e160953cb880f4eb1404065fe9f391, type: 3}
-  sprite: {fileID: 7573680209271939637, guid: 8768f14953563744b8350284f5bdc92c, type: 3}
+  clipOk: {fileID: 0}
+  clipNo: {fileID: 0}
+  sprite: {fileID: 8910550883388935675, guid: aa73aca67a1b5fb48907cd0847b89e2b, type: 3}

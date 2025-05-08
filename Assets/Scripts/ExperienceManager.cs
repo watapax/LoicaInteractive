@@ -7,7 +7,7 @@ using System.Data;
 using UnityEngine.Events;
 public class ExperienceManager : MonoBehaviour
 {
-    public UnityEvent onSubirdeNivel;
+    public UnityEvent onSubirdeNivel, onFaltoPoquito, onRespuestaCorrecta;
     public float velocidadAumentoBarra;
     public ExpData expData;
     float localExp;
@@ -22,9 +22,11 @@ public class ExperienceManager : MonoBehaviour
     public RectTransform panelExp;
     float fillAmountTarget;
     public float porcentajeParaAyudar;
-    public GameObject nivelSuperadoObject;
+    public GameObject nivelSuperadoObject, faltoPoquitoObject;
     private void Start()
     {
+       // expData.currentExp = 0;
+        //expData.prevFill = 0;
         textLvl.text = "LVL " + expData.lvl.ToString();
         //nextExp = expData.expToNextLvl;
         panelExp.localScale = Vector3.zero;
@@ -61,6 +63,8 @@ public class ExperienceManager : MonoBehaviour
 
         float target = expBarLocal.fillAmount + _exp;
 
+        onRespuestaCorrecta.Invoke();
+
         while(expBarLocal.fillAmount < target)
         {
             expBarLocal.fillAmount += Time.deltaTime * velocidadAumentoBarra;
@@ -75,12 +79,14 @@ public class ExperienceManager : MonoBehaviour
 
 
 
+
     IEnumerator AnimarBarritaExp()
     {
         yield return new WaitForSeconds(1);
 
         bool subio = false;
-        while(expBarLocal.fillAmount > 0)
+        bool casi = false;
+        while (expBarLocal.fillAmount > 0)
         {
             expBarLocal.fillAmount -= Time.deltaTime * velocidadAumentoBarra;
             expBar.fillAmount += Time.deltaTime * velocidadAumentoBarra; // aca debo multiplicar por el conversor de localexp a globalexp
@@ -98,10 +104,15 @@ public class ExperienceManager : MonoBehaviour
 
         if (!subio && expBar.fillAmount > porcentajeParaAyudar)
         {
-            ActivarMinijuegoDeAyuda();
+            yield return new WaitForSeconds(0.5f);
+            faltoPoquitoObject.SetActive(true);
+            casi = true;
+            //ActivarMinijuegoDeAyuda();
+
+
         }
 
-        if(subio)
+        if (subio)
         {
             yield return new WaitForSeconds(0.5f);
             nivelSuperadoObject.SetActive(true);
@@ -115,6 +126,11 @@ public class ExperienceManager : MonoBehaviour
             yield return new WaitForSeconds(3);
             onSubirdeNivel.Invoke();
         }
+        if(casi)
+        {
+            yield return new WaitForSeconds(3);
+            onFaltoPoquito.Invoke();
+        }
 
         yield return null;
     }
@@ -127,7 +143,8 @@ public class ExperienceManager : MonoBehaviour
     void SubirDeNivel()
     {
         print("animacion feedback de subir de nivel");
-        expData.lvl++;
+        expData.prevFill = 0;
+        expData.currentExp = 0;
     }
 
     IEnumerator FadeColor(Image _image, Color _targetColor, float _lerpTime)

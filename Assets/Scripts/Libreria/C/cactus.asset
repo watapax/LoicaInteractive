@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: cactus
   letra: C
-  clipOk: {fileID: 8300000, guid: 72a28040952a0a045be3ad143e1bdd5c, type: 3}
-  clipNo: {fileID: 8300000, guid: 92b8682801a6c0e46993a4bcf0d99068, type: 3}
-  sprite: {fileID: 7274228001004885754, guid: 8768f14953563744b8350284f5bdc92c, type: 3}
+  clipOk: {fileID: 0}
+  clipNo: {fileID: 0}
+  sprite: {fileID: 2101895401771049769, guid: aa73aca67a1b5fb48907cd0847b89e2b, type: 3}

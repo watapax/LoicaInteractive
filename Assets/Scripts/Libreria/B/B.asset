@@ -15,9 +15,8 @@ MonoBehaviour:
   letra: 1
   objetos:
   - {fileID: 11400000, guid: db3dc459f45aa784aace9076da7864ff, type: 2}
-  - {fileID: 11400000, guid: a0d9b213d907ebb41a7c49c940f04f1e, type: 2}
-  - {fileID: 11400000, guid: cb4b4be111eb61d4eb551c04f4023773, type: 2}
-  - {fileID: 11400000, guid: 6bbf593000fce2e4ba12cef867f7ad25, type: 2}
-  - {fileID: 11400000, guid: 1693a61fbf5256448bed23ad5c3f44d6, type: 2}
-  - {fileID: 11400000, guid: b7f98a24bae9bf4488ecee1a46c92303, type: 2}
-  - {fileID: 11400000, guid: 71215afe59797264bb045d9d0b7a4613, type: 2}
+  - {fileID: 11400000, guid: 6b8bf0b97314a914aba71803cfc0cf2d, type: 2}
+  - {fileID: 11400000, guid: d44b76a05a2e2e044b90ccaa4892f4f6, type: 2}
+  - {fileID: 11400000, guid: b22e9cbbc6c2e21459e74b1013abc27e, type: 2}
+  - {fileID: 11400000, guid: 7349380140c09114a9c5ddb84e10edf9, type: 2}
+  - {fileID: 11400000, guid: 26ac3ec7ccd7f3f4db6f796d85c6e0e5, type: 2}

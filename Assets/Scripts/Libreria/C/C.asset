@@ -13,4 +13,10 @@ MonoBehaviour:
   m_Name: C
   m_EditorClassIdentifier: 
   letra: 2
-  objetos: []
+  objetos:
+  - {fileID: 11400000, guid: 8b5b2954eb81b05489b23d9f3d6ff1d7, type: 2}
+  - {fileID: 11400000, guid: 372fdc865e354fb48a3ba7696a7d324c, type: 2}
+  - {fileID: 11400000, guid: 5a367ddefcbdb3a45b3571313e987440, type: 2}
+  - {fileID: 11400000, guid: 84ccf4d42b47d4040b3fff9212119feb, type: 2}
+  - {fileID: 11400000, guid: 47a4f1d6eafe33f49a347029e08a7623, type: 2}
+  - {fileID: 11400000, guid: ccd992e6e42a8bc4fa4a77b52a5a5a13, type: 2}
