@@ -45,6 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Frente
+    uniqueID: 2588028137
+    locked: 0
   - name: FX
     uniqueID: 3244771679
     locked: 0

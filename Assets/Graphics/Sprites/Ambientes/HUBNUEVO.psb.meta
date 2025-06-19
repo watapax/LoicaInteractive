@@ -557,6 +557,204 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 774, y: 0}
+  - name: HUBNUEVO_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7715
+      y: 2177
+      width: 302
+      height: 372
+    spriteID: 0da5cc836f764ca40a0532b94fdfad57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7715, y: 2177}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 7471
+      y: 2289
+      width: 62
+      height: 178
+    spriteID: 6722e935ed7131149a1ac8637a8125d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 7471, y: 2289}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6949
+      y: 2299
+      width: 204
+      height: 354
+    spriteID: 0c350531a89cd5949b662ab59faf3558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6949, y: 2299}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6031
+      y: 2117
+      width: 358
+      height: 494
+    spriteID: 0df3a40190e963d43b1fd4e806accd9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6031, y: 2117}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 5475
+      y: 2405
+      width: 60
+      height: 183
+    spriteID: 9f9faf6c28c073c4cbbd7fba04f69038
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 5475, y: 2405}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4787
+      y: 2141
+      width: 484
+      height: 529
+    spriteID: 79aedf68c41848f46a9c87dc13efa732
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4787, y: 2141}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4403
+      y: 2229
+      width: 88
+      height: 300
+    spriteID: e2bd539c7306a5444a1ff94cda24c88d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4403, y: 2229}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6503
+      y: 2317
+      width: 84
+      height: 190
+    spriteID: 05aa93d7ab3519e448100166f37a7d79
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6503, y: 2317}
+    spritePosition: {x: 0, y: 0}
+  - name: HUBNUEVO_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 6841
+      y: 2207
+      width: 52
+      height: 78
+    spriteID: fabe6e5db4198a244a8956e9131677c5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 6841, y: 2207}
+    spritePosition: {x: 0, y: 0}
   spriteImportData: []
   rigSpriteImportData: []
   sharedRigSpriteImportData: []

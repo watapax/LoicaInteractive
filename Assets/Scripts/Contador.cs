@@ -8,6 +8,7 @@ public class Contador : MonoBehaviour
     public UnityEvent onComplete;
     public Image imagenContador;
     public float tiempo;
+    public float tiempoRestante;
     bool isCounting;
     bool contando;
 
@@ -38,6 +39,13 @@ public class Contador : MonoBehaviour
 
         yield return new WaitForSeconds(0.7f);
 
+        while(imagenContador.fillAmount < 1)
+        {
+            imagenContador.fillAmount += contando ? Time.deltaTime / tiempo : 0;
+            yield return null;
+        }
+
+        /*
         while(t < to)
         {
             t += contando? Time.deltaTime : 0;
@@ -45,6 +53,7 @@ public class Contador : MonoBehaviour
             imagenContador.fillAmount = p;
             yield return null;
         }
+        */
 
         Complete();
     }

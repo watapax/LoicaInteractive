@@ -1,0 +1,876 @@
+fileFormatVersion: 2
+guid: 22b3313baffd91d4a8acd899efb3dcb0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3387215289242029972
+    second: abejaPuzzle_0
+  - first:
+      213: 7523318860443489350
+    second: abejaPuzzle_1
+  - first:
+      213: -950855193904823855
+    second: abejaPuzzle_2
+  - first:
+      213: -1462163320465672344
+    second: abejaPuzzle_3
+  - first:
+      213: -4772531871122652930
+    second: abejaPuzzle_4
+  - first:
+      213: -7618484103655109522
+    second: abejaPuzzle_5
+  - first:
+      213: 3509683099974792260
+    second: abejaPuzzle_6
+  - first:
+      213: 4240287855329578257
+    second: abejaPuzzle_7
+  - first:
+      213: -7393155612670071327
+    second: abejaPuzzle_8
+  - first:
+      213: -3651697261585115542
+    second: abejaPuzzle_9
+  - first:
+      213: -8374031505817165125
+    second: abejaPuzzle_10
+  - first:
+      213: 7229282057095909213
+    second: abejaPuzzle_11
+  - first:
+      213: -1017107443741487630
+    second: abejaPuzzle_12
+  - first:
+      213: 3308043928385731214
+    second: abejaPuzzle_13
+  - first:
+      213: 6331804287054039600
+    second: abejaPuzzle_14
+  - first:
+      213: -3039318313154025494
+    second: abejaPuzzle_15
+  - first:
+      213: 3223635017500363020
+    second: abejaPuzzle_16
+  - first:
+      213: -66090556699388917
+    second: abejaPuzzle_17
+  - first:
+      213: -3143667310959980707
+    second: abejaPuzzle_18
+  - first:
+      213: -7568614960935527934
+    second: abejaPuzzle_19
+  - first:
+      213: -6428334891230725226
+    second: abejaPuzzle_20
+  - first:
+      213: 2892121089206692141
+    second: abejaPuzzle_21
+  - first:
+      213: 4230575093549074122
+    second: abejaPuzzle_22
+  - first:
+      213: -2325015978787436158
+    second: abejaPuzzle_23
+  - first:
+      213: -375145947031889361
+    second: abejaPuzzle_24
+  - first:
+      213: -3668929898057575266
+    second: abejaPuzzle_25
+  - first:
+      213: 164525604579016673
+    second: abejaPuzzle_26
+  - first:
+      213: -1936257282022594494
+    second: abejaPuzzle_27
+  - first:
+      213: 5481753807773079517
+    second: abejaPuzzle_28
+  - first:
+      213: -3311640884989547316
+    second: abejaPuzzle_29
+  - first:
+      213: 2428969305128726953
+    second: abejaPuzzle_30
+  - first:
+      213: -8926674318521401497
+    second: abejaPuzzle_31
+  - first:
+      213: 7317764701288483582
+    second: abejaPuzzle_32
+  - first:
+      213: 8660496386359120354
+    second: abejaPuzzle_33
+  - first:
+      213: -6686028468892168370
+    second: abejaPuzzle_34
+  - first:
+      213: -6838952567233198226
+    second: abejaPuzzle_35
+  - first:
+      213: 8563252941615460873
+    second: abejaPuzzle_36
+  - first:
+      213: 3593881447333473451
+    second: abejaPuzzle_37
+  - first:
+      213: -2605565200986815452
+    second: abejaPuzzle_38
+  - first:
+      213: 7998412343988499849
+    second: abejaPuzzle_39
+  - first:
+      213: 3880021068651392078
+    second: abejaPuzzle_40
+  - first:
+      213: -3651860655296266538
+    second: abejaPuzzle_41
+  - first:
+      213: -2594596110870252022
+    second: abejaPuzzle_42
+  - first:
+      213: -4041244739909774057
+    second: abejaPuzzle_43
+  - first:
+      213: 5298618704859525579
+    second: abejaPuzzle_44
+  - first:
+      213: -1341141103394932082
+    second: abejaPuzzle_45
+  - first:
+      213: 4871606256988183100
+    second: abejaPuzzle_46
+  - first:
+      213: -6650086993317627610
+    second: abejaPuzzle_47
+  - first:
+      213: -6240371611838304251
+    second: abejaPuzzle_48
+  - first:
+      213: 5902638583941373132
+    second: abejaPuzzle_49
+  - first:
+      213: -4486851513743981137
+    second: abejaPuzzle_50
+  - first:
+      213: -1363098075051893279
+    second: abejaPuzzle_51
+  - first:
+      213: 1224039601329823657
+    second: abejaPuzzle_52
+  - first:
+      213: 7402488143186365257
+    second: abejaPuzzle_53
+  - first:
+      213: -8576590160342869062
+    second: abejaPuzzle_54
+  - first:
+      213: 7312385573416756138
+    second: abejaPuzzle_55
+  - first:
+      213: 8028399637285740760
+    second: abejaPuzzle_56
+  - first:
+      213: -369369098037001972
+    second: abejaPuzzle_57
+  - first:
+      213: 6047102206897451409
+    second: abejaPuzzle_58
+  - first:
+      213: 5424106242311356251
+    second: abejaPuzzle_59
+  - first:
+      213: -124756368960866517
+    second: abejaPuzzle_60
+  - first:
+      213: 6805440794504763176
+    second: abejaPuzzle_61
+  - first:
+      213: 6590855311468190797
+    second: abejaPuzzle_62
+  - first:
+      213: -803253879648984260
+    second: abejaPuzzle_63
+  - first:
+      213: -7206427065429448432
+    second: abejaPuzzle_64
+  - first:
+      213: -4261759922655985620
+    second: abejaPuzzle_65
+  - first:
+      213: -5700895835770089794
+    second: abejaPuzzle_66
+  - first:
+      213: 8342208709702326035
+    second: abejaPuzzle_67
+  - first:
+      213: -2293078003456895543
+    second: abejaPuzzle_68
+  - first:
+      213: -4858547688327573360
+    second: abejaPuzzle_69
+  - first:
+      213: 489555752288273282
+    second: abejaPuzzle_70
+  - first:
+      213: -8556118933743119069
+    second: abejaPuzzle_71
+  - first:
+      213: 3154429421428087199
+    second: abejaPuzzle_72
+  - first:
+      213: 6695978939806915481
+    second: abejaPuzzle_73
+  - first:
+      213: -3764840897446172691
+    second: abejaPuzzle_74
+  - first:
+      213: -7688759647077824237
+    second: abejaPuzzle_75
+  - first:
+      213: -7230367995163537833
+    second: abejaPuzzle_76
+  - first:
+      213: -1714896299584004505
+    second: abejaPuzzle_77
+  - first:
+      213: 1221422467996135099
+    second: abejaPuzzle_78
+  - first:
+      213: 606604962520444696
+    second: abejaPuzzle_79
+  - first:
+      213: 5454385263954421762
+    second: abejaPuzzle_80
+  - first:
+      213: -2796675578767742709
+    second: abejaPuzzle_81
+  - first:
+      213: -9117244850989145993
+    second: abejaPuzzle_82
+  - first:
+      213: -9077528686690883279
+    second: abejaPuzzle_83
+  - first:
+      213: 5610187605132281750
+    second: abejaPuzzle_84
+  - first:
+      213: -2080457615869552930
+    second: abejaPuzzle_85
+  - first:
+      213: 1660041470478060841
+    second: abejaPuzzle_86
+  - first:
+      213: -6404189414662813884
+    second: abejaPuzzle_87
+  - first:
+      213: 1206782577821708610
+    second: abejaPuzzle_88
+  - first:
+      213: -5464792537018458505
+    second: abejaPuzzle_89
+  - first:
+      213: -1115655226534433022
+    second: abejaPuzzle_90
+  - first:
+      213: 8294202538649174243
+    second: abejaPuzzle_91
+  - first:
+      213: -6847211713725211603
+    second: abejaPuzzle_92
+  - first:
+      213: -3962714333651345505
+    second: abejaPuzzle_93
+  - first:
+      213: -387471465435491855
+    second: abejaPuzzle_94
+  - first:
+      213: 5238665054696878702
+    second: abejaPuzzle_95
+  - first:
+      213: 4219904858759549202
+    second: abejaPuzzle_96
+  - first:
+      213: 1518988319908022923
+    second: abejaPuzzle_97
+  - first:
+      213: -4641174255018371224
+    second: abejaPuzzle_98
+  - first:
+      213: -2956208041344794649
+    second: abejaPuzzle_99
+  - first:
+      213: -3802028275469826991
+    second: abejaPuzzle_100
+  - first:
+      213: 1116552892003700334
+    second: abejaPuzzle_101
+  - first:
+      213: 7201637983058126015
+    second: abejaPuzzle_102
+  - first:
+      213: -3129473703273444996
+    second: abejaPuzzle_103
+  - first:
+      213: -4174426548344970195
+    second: abejaPuzzle_104
+  - first:
+      213: -7009981260367957379
+    second: abejaPuzzle_105
+  - first:
+      213: -5072313029286997565
+    second: abejaPuzzle_106
+  - first:
+      213: -6055959732252460487
+    second: abejaPuzzle_107
+  - first:
+      213: -1929705246638316663
+    second: abejaPuzzle_108
+  - first:
+      213: 3089675610354711861
+    second: abejaPuzzle_109
+  - first:
+      213: 2816680823264262800
+    second: abejaPuzzle_110
+  - first:
+      213: 2029910809271840494
+    second: abejaPuzzle_111
+  - first:
+      213: -5720815908984969800
+    second: abejaPuzzle_112
+  - first:
+      213: -1477289527929555713
+    second: abejaPuzzle_113
+  - first:
+      213: 3341045861646243621
+    second: abejaPuzzle_114
+  - first:
+      213: 4211531020472105140
+    second: abejaPuzzle_115
+  - first:
+      213: 5421446942574678157
+    second: abejaPuzzle_116
+  - first:
+      213: 603847286039097998
+    second: abejaPuzzle_117
+  - first:
+      213: 1656748361178867406
+    second: abejaPuzzle_118
+  - first:
+      213: -1061972944263316719
+    second: abejaPuzzle_119
+  - first:
+      213: -3752427867419469036
+    second: abejaPuzzle_120
+  - first:
+      213: -5441621862033452258
+    second: abejaPuzzle_121
+  - first:
+      213: -3043978588838148286
+    second: abejaPuzzle_122
+  - first:
+      213: -8151270064664623098
+    second: abejaPuzzle_123
+  - first:
+      213: -4834667213737137242
+    second: abejaPuzzle_124
+  - first:
+      213: 8252934413870869462
+    second: abejaPuzzle_125
+  - first:
+      213: 7982595550272075977
+    second: abejaPuzzle_126
+  - first:
+      213: -2656307253399763902
+    second: abejaPuzzle_127
+  - first:
+      213: 660927661934181022
+    second: abejaPuzzle_128
+  - first:
+      213: -9070345285581548993
+    second: abejaPuzzle_129
+  - first:
+      213: -6594353151780415228
+    second: abejaPuzzle_130
+  - first:
+      213: 80082334814189908
+    second: abejaPuzzle_131
+  - first:
+      213: 7389503518679324146
+    second: abejaPuzzle_132
+  - first:
+      213: -4670017468946073511
+    second: abejaPuzzle_133
+  - first:
+      213: 3641172659545386549
+    second: abejaPuzzle_134
+  - first:
+      213: -4364261964108677417
+    second: abejaPuzzle_135
+  - first:
+      213: 1607411478825510389
+    second: abejaPuzzle_136
+  - first:
+      213: -4238358679068640407
+    second: abejaPuzzle_137
+  - first:
+      213: -2872629184472373813
+    second: abejaPuzzle_138
+  - first:
+      213: -7367308236944405102
+    second: abejaPuzzle_139
+  - first:
+      213: -2703742024840054339
+    second: abejaPuzzle_140
+  - first:
+      213: -1699485479484262932
+    second: abejaPuzzle_141
+  - first:
+      213: -5051303059073237642
+    second: abejaPuzzle_142
+  - first:
+      213: 2146673562149569267
+    second: abejaPuzzle_143
+  - first:
+      213: -2651345996205725866
+    second: abejaPuzzle_144
+  - first:
+      213: 2013659976605108204
+    second: abejaPuzzle_145
+  - first:
+      213: -963937661502576522
+    second: abejaPuzzle_146
+  - first:
+      213: -3654295794589264160
+    second: abejaPuzzle_147
+  - first:
+      213: -5431252530047681031
+    second: abejaPuzzle_148
+  - first:
+      213: -8232691493478393514
+    second: abejaPuzzle_149
+  - first:
+      213: 9041545278435375337
+    second: abejaPuzzle_150
+  - first:
+      213: -5792469337163785803
+    second: abejaPuzzle_151
+  - first:
+      213: 6778348347194812489
+    second: abejaPuzzle_152
+  - first:
+      213: 9013247567241674071
+    second: abejaPuzzle_153
+  - first:
+      213: 1920070386307461887
+    second: abejaPuzzle_154
+  - first:
+      213: 6753736872996574250
+    second: abejaPuzzle_155
+  - first:
+      213: 5289623300328753389
+    second: abejaPuzzle_156
+  - first:
+      213: -194156617713160253
+    second: abejaPuzzle_157
+  - first:
+      213: 7343269657860487123
+    second: abejaPuzzle_158
+  - first:
+      213: 4575417972841033053
+    second: abejaPuzzle_159
+  - first:
+      213: 1299309059921357212
+    second: abejaPuzzle_160
+  - first:
+      213: -4274951337970860103
+    second: abejaPuzzle_161
+  - first:
+      213: -5365643118768579320
+    second: abejaPuzzle_162
+  - first:
+      213: -489845776136710713
+    second: abejaPuzzle_163
+  - first:
+      213: -6633839198698729715
+    second: abejaPuzzle_164
+  - first:
+      213: -5139467040113147938
+    second: abejaPuzzle_165
+  - first:
+      213: -1890936010551872715
+    second: abejaPuzzle_166
+  - first:
+      213: 8681588945363851730
+    second: abejaPuzzle_167
+  - first:
+      213: -5920780730734651807
+    second: abejaPuzzle_168
+  - first:
+      213: 8794441652825340165
+    second: abejaPuzzle_169
+  - first:
+      213: 89761088094778487
+    second: abejaPuzzle_170
+  - first:
+      213: -7319085650686288717
+    second: abejaPuzzle_171
+  - first:
+      213: 1945106134468576833
+    second: abejaPuzzle_172
+  - first:
+      213: -6597814098490707966
+    second: abejaPuzzle_173
+  - first:
+      213: -6998978819877881749
+    second: abejaPuzzle_174
+  - first:
+      213: 7308803831165883064
+    second: abejaPuzzle_175
+  - first:
+      213: -3882980325238334016
+    second: abejaPuzzle_176
+  - first:
+      213: 8375853353473577005
+    second: abejaPuzzle_177
+  - first:
+      213: 5566083913273698642
+    second: abejaPuzzle_178
+  - first:
+      213: 2314561648749240595
+    second: abejaPuzzle_179
+  - first:
+      213: -5989617552378485547
+    second: abejaPuzzle_180
+  - first:
+      213: 4450154574375964160
+    second: abejaPuzzle_181
+  - first:
+      213: -8332217322615935036
+    second: abejaPuzzle_182
+  - first:
+      213: -885274821718050095
+    second: abejaPuzzle_183
+  - first:
+      213: 694912183881152445
+    second: abejaPuzzle_184
+  - first:
+      213: 5850521300637815941
+    second: abejaPuzzle_185
+  - first:
+      213: 7368827809691207128
+    second: abejaPuzzle_186
+  - first:
+      213: 1588766378977959661
+    second: abejaPuzzle_187
+  - first:
+      213: -3577041002470433676
+    second: abejaPuzzle_188
+  - first:
+      213: -570665034284703305
+    second: abejaPuzzle_189
+  - first:
+      213: -8859464088312545031
+    second: abejaPuzzle_190
+  - first:
+      213: 7724829846077771263
+    second: abejaPuzzle_191
+  - first:
+      213: 1886765988404557637
+    second: abejaPuzzle_192
+  - first:
+      213: -1868453007917510580
+    second: abejaPuzzle_193
+  - first:
+      213: 3338800853971153161
+    second: abejaPuzzle_194
+  - first:
+      213: -3141122157364886749
+    second: abejaPuzzle_195
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: abejaPuzzle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 606
+        height: 418
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614de983c59a34b49b0ab1d2dc17c7bd
+      internalID: -290003766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: abejaPuzzle_1
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 0
+        width: 128
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 64, y: 43}
+        - {x: 64, y: 56}
+        - {x: -64, y: 56}
+        - {x: -64, y: 43}
+        - {x: -60, y: 26}
+        - {x: -26, y: -54}
+        - {x: -23, y: -56}
+        - {x: 33, y: -56}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c0c4827af584b4ba536d7c5cc435f6
+      internalID: 2122870148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: abejaPuzzle_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 161
+        width: 148
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8732a69784179c645a966daf28575660
+      internalID: -1529779149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: abejaPuzzle_3
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 235
+        width: 127
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 63.5, y: -11}
+        - {x: 35.5, y: 30}
+        - {x: -27.5, y: 30}
+        - {x: -63.5, y: 15}
+        - {x: -63.5, y: -30}
+        - {x: 63.5, y: -30}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d700c5b7448827049ba8dc71d51d4e3f
+      internalID: -1484148067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: abejaPuzzle_4
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 96
+        width: 606
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 93, y: -161}
+        - {x: 301, y: -159}
+        - {x: 303, y: -157}
+        - {x: 303, y: 146}
+        - {x: 300, y: 161}
+        - {x: -278, y: 161}
+        - {x: -303, y: 133}
+        - {x: -303, y: -159}
+        - {x: -129, y: -161}
+        - {x: -88, y: -135}
+        - {x: -107, y: -77}
+        - {x: -70, y: 29}
+        - {x: -4, y: 60}
+        - {x: 56, y: 38}
+        - {x: 100, y: -69}
+        - {x: 90, y: -120}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f155eb99df6144da1f27fa607666cf
+      internalID: 198776487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c072c44224ccc84abebf36b7bafccf8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      abejaPuzzle_0: -290003766
+      abejaPuzzle_1: 2122870148
+      abejaPuzzle_2: -1529779149
+      abejaPuzzle_3: -1484148067
+      abejaPuzzle_4: 198776487
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

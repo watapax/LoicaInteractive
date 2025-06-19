@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lvl: 1
   currentExp: 0
-  expToNextLvl: 60
+  expToNextLvl: 100
   totalExp: 0
-  prevFill: 0.8345355
+  prevFill: 0

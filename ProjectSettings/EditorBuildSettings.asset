@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/5 - FaltoPoquito.unity
     guid: 152b06d46fa70ef43b5275c0e413d682
+  - enabled: 1
+    path: Assets/Scenes/6 - Puzzle.unity
+    guid: abcb28ca5487b6444a3f04eb5b63ccec
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -23,9 +23,13 @@ public class DragNDrop : MonoBehaviour
     private Vector3 previousTargetPosition; 
     private Vector3 targetVelocity; 
     private Quaternion targetRotation; 
-    private Quaternion originalRotation; 
+    private Quaternion originalRotation;
 
-
+    bool desactivar;
+    public void Desactivar()
+    {
+        desactivar = true;
+    }
     private void Start()
     {
         mainCamera = Camera.main;
@@ -45,6 +49,7 @@ public class DragNDrop : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (desactivar) return;
         onMouseEnter.Invoke();
         if(Parallax.instance != null)
         {
@@ -61,6 +66,7 @@ public class DragNDrop : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (desactivar) return;
         if (isDragging)
         {
             Vector3 mousePos = Input.mousePosition;
@@ -71,6 +77,7 @@ public class DragNDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (desactivar) return;
         onMouseup.Invoke();
         if (Parallax.instance != null)
         {
@@ -84,6 +91,7 @@ public class DragNDrop : MonoBehaviour
 
     private void Update()
     {
+        if (desactivar) return;
         if (isDragging)
         {
             transform.position = targetPosition;
@@ -104,6 +112,7 @@ public class DragNDrop : MonoBehaviour
 
     private void ApplyRotationBasedOnVelocity()
     {
+        if (desactivar) return;
         if (!isDragging) return;
         if (isMoving)
         {
@@ -125,6 +134,7 @@ public class DragNDrop : MonoBehaviour
 
     public void OnDropAction()
     {
+        if (desactivar) return;
         // Disparar el evento
         InteractionSystem.GatillarOnDrop();
 

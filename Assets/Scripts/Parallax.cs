@@ -33,7 +33,7 @@ public class Parallax : MonoBehaviour
 
 
         // Inicializa la posición objetivo
-        targetX = capas[0].position.x;
+        targetX = capas[0].localPosition.x;
     }
 
     void Update()
@@ -42,16 +42,16 @@ public class Parallax : MonoBehaviour
         if (!enable) return;
         for (int i = 1; i < capas.Length; i++)
         {
-            Vector3 primeraCapaPos = capas[0].position;
+            Vector3 primeraCapaPos = capas[0].localPosition;
             primeraCapaPos.x *= (i * desplazamiento);
-            capas[i].position = primeraCapaPos;
+            capas[i].localPosition = primeraCapaPos;
         }
         if (!isDragging)
         {
             // Suaviza el movimiento hacia la posición objetivo
             //float newX = Mathf.SmoothDamp(capas[0].position.x, targetX, ref velocity, smoothTime);
             //capas[0].position = new Vector3(newX, capas[0].position.y, capas[0].position.z);
-            capas[0].position = Vector3.Lerp(capas[0].transform.position, targetPos, desaceleracion * Time.deltaTime);
+            capas[0].localPosition = Vector3.Lerp(capas[0].transform.localPosition, targetPos, desaceleracion * Time.deltaTime);
         }
 
     }
@@ -60,10 +60,10 @@ public class Parallax : MonoBehaviour
     {
         if (!enable) return;
         // Calcula el offset entre el punto de clic y la posición del sprite
-        offset = capas[0].position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        offset = capas[0].localPosition - Camera.main.ScreenToWorldPoint(Input.mousePosition);
         isDragging = true;
         velocity = 0f; // Reinicia la velocidad al comenzar a arrastrar
-        prevXPos = capas[0].position.x;
+        prevXPos = capas[0].localPosition.x;
     }
 
     void OnMouseDrag()
@@ -71,8 +71,8 @@ public class Parallax : MonoBehaviour
         if (!enable) return;
         if (isDragging)
         {
-            velocidadX = (capas[0].position.x - prevXPos) / Time.deltaTime ;
-            prevXPos = capas[0].position.x;
+            velocidadX = (capas[0].localPosition.x - prevXPos) / Time.deltaTime ;
+            prevXPos = capas[0].localPosition.x;
             // Obtén la posición del mouse en el mundo
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
@@ -80,20 +80,20 @@ public class Parallax : MonoBehaviour
             float newX = mousePosition.x + offset.x; //Mathf.Clamp(mousePosition.x + offset.x, minX, maxX);
 
             // Aplica la nueva posición
-            capas[0].position = new Vector3(newX, capas[0].position.y, capas[0].position.z);
+            capas[0].localPosition = new Vector3(newX, capas[0].localPosition.y, capas[0].localPosition.z);
 
             // Actualiza la posición objetivo mientras se arrastra
             targetX = newX;
-            targetPos = capas[0].position;
+            targetPos = capas[0].localPosition;
             targetPos.x += 2 * (velocidadX * Time.deltaTime);
             targetPos.x = Mathf.Clamp(targetPos.x, minX, maxX);
 
 
             for (int i = 1; i < capas.Length; i++)
             {
-                Vector3 primeraCapaPos = capas[0].position;
+                Vector3 primeraCapaPos = capas[0].localPosition;
                 primeraCapaPos.x *= (i * desplazamiento);
-                capas[i].position = primeraCapaPos;
+                capas[i].localPosition = primeraCapaPos;
             }
 
         }

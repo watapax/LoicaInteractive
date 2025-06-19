@@ -7,10 +7,11 @@ using System.Data;
 using UnityEngine.Events;
 public class ExperienceManager : MonoBehaviour
 {
-    public UnityEvent onSubirdeNivel, onFaltoPoquito, onRespuestaCorrecta;
+
+    public UnityEvent onSubirdeNivel, onFaltoPoquito, onRespuestaCorrecta, onJugoMal;
     public float velocidadAumentoBarra;
     public ExpData expData;
-    float localExp;
+    public float localExp;
     public Color transparente;
     public Color colorBgActivo;
     public Image expBar, expBarLocal;
@@ -23,6 +24,12 @@ public class ExperienceManager : MonoBehaviour
     float fillAmountTarget;
     public float porcentajeParaAyudar;
     public GameObject nivelSuperadoObject, faltoPoquitoObject;
+    public int objetosEncontrados, totalObjetosEncontrados;
+
+    public void SetTotal(int _total)
+    {
+        totalObjetosEncontrados = _total;
+    }
     private void Start()
     {
        // expData.currentExp = 0;
@@ -39,6 +46,9 @@ public class ExperienceManager : MonoBehaviour
         StartCoroutine(FadeColor(bg, colorBgActivo, lerpTime));
         panelExp.DOScale(Vector3.one, lerpTime).SetEase(Ease.InOutSine);
         StartCoroutine(AnimarBarritaExp());
+        expData.localExp = 0;
+        expData.tiempoRestante = 0;
+        elBool.value = false;
     }
 
 
@@ -48,9 +58,9 @@ public class ExperienceManager : MonoBehaviour
         localExp = 0;
         expBar.fillAmount = expData.prevFill;
     }
-    public void GainLocalExp(int _exp)
+    public void GainLocalExp(float _exp)
     {
-
+        objetosEncontrados++;
         localExp += _exp;
         float exp = _exp / expData.expToNextLvl;  //(float)_exp / 100;
         StartCoroutine(AnimarLocalExp(exp));
@@ -72,6 +82,9 @@ public class ExperienceManager : MonoBehaviour
         }
 
         expBarLocal.fillAmount = target;
+
+        //ChequearEstado();
+
     }
 
 
@@ -96,6 +109,7 @@ public class ExperienceManager : MonoBehaviour
                 expBar.fillAmount = 0;
                 subio = true;
                 SubirDeNivel();
+                break;
             }
             yield return null;
 
@@ -132,6 +146,10 @@ public class ExperienceManager : MonoBehaviour
             onFaltoPoquito.Invoke();
         }
 
+        if(expBar.fillAmount < porcentajeParaAyudar)
+        {
+            onJugoMal?.Invoke();
+        }
         yield return null;
     }
 
@@ -164,4 +182,60 @@ public class ExperienceManager : MonoBehaviour
     }
 
 
+    public void ChequearEstado()
+    {
+        if(expBarLocal.fillAmount >= 1)
+        {
+            // Lleno la barra
+            HiddenObjectManager.instance.contador.ToggleContador(false);
+            HiddenObjectManager.instance.TerminoMiniJuego();
+            MostrarPanelExp();
+            return;
+        }
+
+        if(objetosEncontrados == totalObjetosEncontrados)
+        {
+            Shuflear();
+            HiddenObjectManager.instance.contador.ToggleContador(false);
+            return;
+        }
+
+    }
+
+    public bool PararContador()
+    {
+        bool parar = false;
+
+        if (expBarLocal.fillAmount >= 1)
+            parar = true;
+        if (objetosEncontrados == totalObjetosEncontrados)
+            parar = true;
+
+        return parar;
+    }
+
+    void TerminarJuego()
+    {
+
+    }
+    public UnityEvent onShuflear;
+    void Shuflear()
+    {
+        expData.localExp = expBarLocal.fillAmount;
+        expData.tiempoRestante = contador.fillAmount;
+        // guardar experienciaLocal
+
+        print("Chufelar!");
+        onShuflear?.Invoke();
+
+    }
+
+    private void OnApplicationQuit()
+    {
+        elBool.value = false;
+        expData.localExp = 0;
+        expData.tiempoRestante = 0;
+    }
+    public ElBool elBool;
+    public Image contador;
 }

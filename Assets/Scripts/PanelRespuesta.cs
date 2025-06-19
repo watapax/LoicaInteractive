@@ -20,6 +20,7 @@ public class PanelRespuesta : MonoBehaviour
     {
         rectTransform.localScale = Vector3.zero;
         bg.color = transparente;
+        balance = GetComponent<BalanceHiddenObject>();
     }
 
     public void ActivarVentana(HiddenObject _hiddenObject, bool _esCorrecto)
@@ -79,10 +80,14 @@ public class PanelRespuesta : MonoBehaviour
         yield return new WaitForSeconds(lerpTimeEscala);
 
         _hiddenObject.puedeApretarse = !_esCorrecto;
-        contador.ToggleContador(true);
+        balance.lastObjectFoundTime = Time.time;
+        if(!HiddenObjectManager.instance.experienceManager.PararContador())
+            contador.ToggleContador(true);
+        
+        HiddenObjectManager.instance.experienceManager.ChequearEstado();
 
     }
-
+    BalanceHiddenObject balance;
 
 
 

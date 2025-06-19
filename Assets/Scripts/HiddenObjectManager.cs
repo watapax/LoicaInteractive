@@ -49,10 +49,13 @@ public class HiddenObjectManager : MonoBehaviour
     public Transform contenedorLetras;
     public GameObject prefabLetra;
     public Animator animator;
+
+    BalanceHiddenObject balance;
     public void IniciarJuego()
     {
         //local experience se resetea
         experienceManager.ResetLocalExp();
+        experienceManager.SetTotal(cantidadObjetosCorrectos);
 
         // poblar el diccionario _abecedario
         for (int i = 0; i < abecedario.libreria.Length; i++)
@@ -216,11 +219,14 @@ public class HiddenObjectManager : MonoBehaviour
     {
         instance = this;
         gameObject.SetActive(false);
+
+        balance = GetComponent<BalanceHiddenObject>();
     }
     public void ComenzarMiniJuego()
     {
         IniciarJuego();
         contador.Comenzar();
+        balance.lastObjectFoundTime = Time.time;
 
     }
 
@@ -252,12 +258,13 @@ public class HiddenObjectManager : MonoBehaviour
     void RespuestaCorrecta(HiddenObject _hiddenObject)
     {
         print("respuesta correcta");
-        experienceManager.GainLocalExp(10);
+        experienceManager.GainLocalExp(balance.CalcularPuntaje());
         contador.ToggleContador(false);
     }
 
     void RespuestaIncorrecta(HiddenObject _hiddenObject)
     {
+        balance.DetenerRacha();
         print("respuesta incorrecta");
         contador.ToggleContador(false);
     }
